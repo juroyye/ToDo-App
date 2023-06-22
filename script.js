@@ -26,5 +26,19 @@ if(todoText) {
     todoEL.innerText = todoText;
    // append the todo li item to the todo unordered 
     todoUL.appendChild(todoEL);
+// clear out after enter
+input.value = " "
+
+todoEL.addEventListener('click', () => {
+    todoEL.classList.toggle('completed');
+})
+
+todoEL.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+
+    todoEL.remove();
+    //remove list item
+
+})
 }
  }

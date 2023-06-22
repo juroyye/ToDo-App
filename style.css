@@ -54,6 +54,13 @@ form{
  list-style-type: none;
 }
 
+.todos li {
+border-top: 1 px solid #e5e5e5;
+cursor: pointer;
+font-size: 1.5rem;
+padding: 1rem 2rem;
+}
+
 .todos li.completed {
     color: white;
     text-decoration: line-through;
